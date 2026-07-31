@@ -18,15 +18,24 @@ export default function BlogPreview() {
         <div className="grid md:grid-cols-3 gap-6 mt-14">
           {featured.map((post) => (
             <Link key={post.slug} to={`/blog/${post.slug}`} className="group">
-              <div
-                className="h-40 rounded-2xl flex items-center justify-center relative overflow-hidden"
-                style={{ backgroundColor: post.color }}
-              >
-                <span className="text-white/25 font-display font-black text-5xl">{post.category[0]}</span>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                <span className="absolute bottom-3 left-3 text-white text-xs font-semibold bg-white/15 backdrop-blur-sm px-2.5 py-1 rounded-full">
-                  {post.category}
-                </span>
+              <div className="h-40 rounded-2xl relative overflow-hidden">
+                {post.image ? (
+                  <>
+                    <img src={post.image} alt={post.title} className="w-full h-full object-cover object-center" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent" />
+                    <span className="absolute bottom-3 left-3 text-white text-xs font-semibold bg-white/15 backdrop-blur-sm px-2.5 py-1 rounded-full">
+                      {post.category}
+                    </span>
+                  </>
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center" style={{ backgroundColor: post.color }}>
+                    <span className="text-white/25 font-display font-black text-5xl">{post.category[0]}</span>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <span className="absolute bottom-3 left-3 text-white text-xs font-semibold bg-white/15 backdrop-blur-sm px-2.5 py-1 rounded-full">
+                      {post.category}
+                    </span>
+                  </div>
+                )}
               </div>
               <div className="flex items-center gap-1.5 text-slate-500 text-xs mt-4">
                 <Calendar className="w-3.5 h-3.5" />
