@@ -1,75 +1,141 @@
+import iSkillsHealthcareSolutionsImage from '../assets/images/i-skills-healthcare-solutions.png'
+import secondBrainAiPlatformImage from '../assets/images/secondbrain-ai-platform.png'
+import diviVoiceAiImage from '../assets/images/divi-voice-ai.png'
+import phonePeTaskTrackerImage from '../assets/images/phonepe-task-tracker.png'
+import aiResumeBuilderPlatformImage from '../assets/images/ai-resume-builder-platform.png'
+
 export const projects = [
   {
-    slug: 'medixcare-hospital',
-    name: 'MedixCare Hospital',
+    slug: 'i-skills-healthcare-solutions',
     category: 'Website',
     filter: 'websites',
-    tagline: 'A modern healthcare website with appointment booking and doctor management system.',
-    color: '#0EA5A5',
-    problem: 'MedixCare needed a digital front door that felt as trustworthy as their in-person care, with online booking to cut phone-queue wait times.',
-    solution: 'We designed a calm, clinical visual language and built an appointment system with doctor availability, specialty filtering, and automated reminders.',
-    results: ['42% of bookings now happen online', '3.2x faster average booking time', '98% patient satisfaction on the new portal'],
-    stack: ['Next.js', 'Tailwind CSS', 'PostgreSQL', 'Twilio'],
+    tagline:
+      'Healthcare education website for Medical Coding, Medical Billing, and Spoken English courses.',
+    color: '#0B5CFF',
+    image: iSkillsHealthcareSolutionsImage,
+    problem:
+      'The institute needed a modern online presence to showcase healthcare training programs, increase admissions, and establish credibility.',
+    solution:
+      'Designed and developed a responsive website with course showcases, placement highlights, testimonials, and enquiry integration to improve user engagement.',
+    results: [
+      'Modern responsive healthcare website',
+      'Improved online visibility',
+      'Optimized for faster user engagement',
+    ],
+    stack: [
+      'HTML5',
+      'CSS3',
+      'JavaScript',
+      'Bootstrap',
+      'Responsive Design',
+    ],
   },
+
   {
-    slug: 'finmate-dashboard',
-    name: 'FinMate Dashboard',
+    slug: 'secondbrain-ai-platform',
     category: 'Web Application',
     filter: 'web-applications',
-    tagline: 'Personal finance dashboard to track income, expenses, budgets and financial goals.',
-    color: '#4F46E5',
-    problem: 'Users wanted a single view of spending across accounts without the clutter of legacy finance apps.',
-    solution: 'We built a real-time dashboard with automatic categorization, budget tracking, and goal visualizations backed by a secure aggregation layer.',
-    results: ['24k+ active monthly users', '4.8★ average app rating', '60% of users set a savings goal in week one'],
-    stack: ['React', 'Node.js', 'Redis', 'Chart.js'],
+    tagline:
+      'AI-powered learning platform with smart notes, quizzes, flashcards, planner, and document management.',
+    color: '#7C3AED',
+    image: secondBrainAiPlatformImage,
+    problem:
+      'Students struggle to organize study materials across multiple tools, resulting in poor productivity and inefficient learning.',
+    solution:
+      'Built an AI-powered learning workspace that combines documents, AI chat, notes, quizzes, flashcards, analytics, and study planning into one platform.',
+    results: [
+      'Centralized learning workspace',
+      'AI-assisted study experience',
+      'Improved learning productivity',
+    ],
+    stack: [
+      'React',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Tailwind CSS',
+      'Gemini API',
+    ],
   },
+
   {
-    slug: 'shophub-store',
-    name: 'ShopHub Store',
-    category: 'E-Commerce',
-    filter: 'e-commerce',
-    tagline: 'A full-featured e-commerce store with product management, cart and secure checkout.',
-    color: '#020B1C',
-    problem: 'ShopHub was outgrowing their template storefront and losing conversions at checkout.',
-    solution: 'We rebuilt the storefront on a headless architecture with a streamlined one-page checkout and inventory-aware product pages.',
-    results: ['31% lift in checkout completion', '1.1s average page load', 'Handles 10k+ concurrent shoppers on drop days'],
-    stack: ['Next.js', 'Stripe', 'Shopify Storefront API'],
-  },
-  {
-    slug: 'ai-content-writer',
-    name: 'AI Content Writer',
+    slug: 'divi-voice-ai',
     category: 'AI Solution',
     filter: 'ai-solutions',
-    tagline: 'AI-powered content generation platform for blogs, ads, emails and social media.',
-    color: '#7C3AED',
-    problem: 'Marketing teams needed on-brand copy at volume without a growing headcount.',
-    solution: 'We built a prompt-engineered generation engine with brand-voice presets, a document editor, and team workspaces.',
-    results: ['10x faster first-draft turnaround', '50k+ pieces of content generated', '92% of drafts published with minimal edits'],
-    stack: ['Next.js', 'Anthropic API', 'PostgreSQL', 'Prisma'],
+    tagline:
+      'Real-time voice AI assistant with natural conversations, memory, and intelligent task automation.',
+    color: '#8B5CF6',
+    image: diviVoiceAiImage,
+    problem:
+      'Traditional chatbots lack real-time voice interaction and contextual memory, resulting in limited user experience.',
+    solution:
+      'Developed a voice-first AI assistant with real-time speech interaction, intelligent memory, natural conversations, and modern conversational UI.',
+    results: [
+      'Real-time voice communication',
+      'Context-aware AI conversations',
+      'Personalized AI assistant experience',
+    ],
+    stack: [
+      'React',
+      'Node.js',
+      'WebSocket',
+      'Gemini Live API',
+      'MongoDB',
+      'Tailwind CSS',
+    ],
   },
+
   {
-    slug: 'fitlife-mobile-app',
-    name: 'FitLife Mobile App',
-    category: 'Mobile App',
-    filter: 'mobile-apps',
-    tagline: 'Fitness tracking mobile app with workout plans, progress tracking and analytics.',
-    color: '#16A34A',
-    problem: 'FitLife wanted to move from spreadsheet-based coaching to a branded, retainable mobile experience.',
-    solution: 'We designed a workout-first mobile app with adaptive plans, progress charts, and offline logging for gym use.',
-    results: ['10k+ downloads in the first quarter', '4.8★ rating across app stores', '68% weekly active retention'],
-    stack: ['React Native', 'Expo', 'Firebase'],
+    slug: 'phonepe-task-tracker',
+    category: 'Web Application',
+    filter: 'web-applications',
+    tagline:
+      'Employee task tracking and productivity management system with secure authentication.',
+    color: '#5B21B6',
+    image: phonePeTaskTrackerImage,
+    problem:
+      'Managing employee tasks manually made it difficult to track daily productivity, assignments, and overall performance.',
+    solution:
+      'Built a secure employee task tracking platform with authentication, task management, productivity monitoring, and performance insights.',
+    results: [
+      'Centralized task management',
+      'Improved employee productivity',
+      'Secure login system',
+    ],
+    stack: [
+      'HTML5',
+      'CSS3',
+      'JavaScript',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+    ],
   },
+
   {
-    slug: 'edulearn-platform',
-    name: 'EduLearn Platform',
-    category: 'Website',
-    filter: 'websites',
-    tagline: 'Online learning platform with courses, quizzes, certificates and student dashboard.',
-    color: '#0B5CFF',
-    problem: 'EduLearn needed a scalable platform to support thousands of concurrent learners across live and self-paced courses.',
-    solution: 'We built a course engine with video streaming, quiz logic, certificate generation, and an instructor dashboard.',
-    results: ['500+ courses launched at scale', '50k+ enrolled students', '99.9% platform uptime'],
-    stack: ['Next.js', 'Node.js', 'AWS S3', 'PostgreSQL'],
+    slug: 'ai-resume-builder-platform',
+    category: 'AI Solution',
+    filter: 'ai-solutions',
+    tagline:
+      'AI-powered resume builder with ATS optimization, resume scoring, and multi-agent intelligence.',
+    color: '#9333EA',
+    image: aiResumeBuilderPlatformImage,
+    problem:
+      'Job seekers struggle to create ATS-friendly resumes that stand out during recruitment.',
+    solution:
+      'Developed an AI resume builder with multiple AI agents that generate, optimize, analyze, and score resumes for better hiring success.',
+    results: [
+      'ATS-friendly resume generation',
+      'AI-powered resume scoring',
+      'Professional resume templates',
+    ],
+    stack: [
+      'Next.js',
+      'Tailwind CSS',
+      'TypeScript',
+      'OpenAI API',
+      'Node.js',
+    ],
   },
 ]
 
@@ -77,9 +143,8 @@ export const filters = [
   { key: 'all', label: 'All Projects' },
   { key: 'websites', label: 'Websites' },
   { key: 'web-applications', label: 'Web Applications' },
-  { key: 'mobile-apps', label: 'Mobile Apps' },
-  { key: 'e-commerce', label: 'E-Commerce' },
   { key: 'ai-solutions', label: 'AI Solutions' },
 ]
 
-export const getProjectBySlug = (slug) => projects.find((p) => p.slug === slug)
+export const getProjectBySlug = (slug) =>
+  projects.find((p) => p.slug === slug)

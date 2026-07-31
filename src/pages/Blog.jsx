@@ -45,12 +45,24 @@ export default function Blog() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {visible.map((post) => (
               <Link key={post.slug} to={`/blog/${post.slug}`} className="group bg-white rounded-2xl overflow-hidden border border-slate-200/70 hover:shadow-xl transition-shadow">
-                <div className="h-44 relative overflow-hidden flex items-center justify-center" style={{ backgroundColor: post.color }}>
-                  <span className="text-white/20 font-display font-black text-6xl">{post.category[0]}</span>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-white text-[10px] font-semibold bg-white/15 backdrop-blur-sm px-2.5 py-1 rounded-full">
-                    {post.category}
-                  </span>
+                <div className="h-44 relative overflow-hidden">
+                  {post.image ? (
+                    <>
+                      <img src={post.image} alt={post.title} className="w-full h-full object-cover object-center" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent" />
+                      <span className="absolute bottom-3 left-3 text-white text-[10px] font-semibold bg-white/15 backdrop-blur-sm px-2.5 py-1 rounded-full">
+                        {post.category}
+                      </span>
+                    </>
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center" style={{ backgroundColor: post.color }}>
+                      <span className="text-white/20 font-display font-black text-6xl">{post.category[0]}</span>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                      <span className="absolute bottom-3 left-3 text-white text-[10px] font-semibold bg-white/15 backdrop-blur-sm px-2.5 py-1 rounded-full">
+                        {post.category}
+                      </span>
+                    </div>
+                  )}
                 </div>
                 <div className="p-5">
                   <div className="flex items-center gap-1.5 text-slate-500 text-xs">

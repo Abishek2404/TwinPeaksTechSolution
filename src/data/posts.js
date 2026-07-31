@@ -1,3 +1,10 @@
+import webDevelopmentImage from '../assets/images/blogs/Web-Development.jpg'
+import mobileAppsImage from '../assets/images/blogs/Mobile-App.jpg'
+import aiBusinessImage from '../assets/images/blogs/how-Ai-transforming-business.png'
+import uiUxImage from '../assets/images/blogs/ui-ux.jpg'
+import startupStackImage from '../assets/images/blogs/Choosing-the-Right-Tech-Stack-for-Your-Startup.png'
+import seoImage from '../assets/images/blogs/SEO-Fundamentals-Every-Founder-Should-Know.png'
+
 export const posts = [
   {
     slug: '10-essential-tips-modern-web-development',
@@ -6,6 +13,7 @@ export const posts = [
     date: '2026-05-10',
     readTime: '5 min read',
     color: '#0B5CFF',
+    image: webDevelopmentImage,
     excerpt: 'Discover best practices and tips that can help you build faster, secure and scalable web applications.',
     body: `Modern web development moves fast, but the fundamentals that separate a good product from a great one have stayed remarkably stable. Here are ten practices we return to on nearly every project.
 
@@ -36,6 +44,7 @@ Finally, write the documentation you wish the last engineer had left you. Future
     date: '2026-04-28',
     readTime: '6 min read',
     color: '#16A34A',
+    image: mobileAppsImage,
     excerpt: 'From AI integration to super apps, explore the key mobile app development trends shaping the future.',
     body: `Mobile app development is consolidating around a handful of clear trends, and businesses planning a build in the next year should be designing with these in mind.
 
@@ -58,6 +67,7 @@ For teams planning a 2026 build, the practical takeaway is this: pick your platf
     date: '2026-04-15',
     readTime: '7 min read',
     color: '#7C3AED',
+    image: aiBusinessImage,
     excerpt: "AI is no longer the future — it's the present. Learn how businesses are leveraging AI to drive growth and efficiency.",
     body: `The conversation around AI in business has shifted from "should we adopt it" to "where does it fit first." The companies seeing real returns share a common pattern: they started narrow.
 
@@ -78,6 +88,7 @@ Our advice to clients starting an AI initiative is consistent: pick one workflow
     date: '2026-04-05',
     readTime: '4 min read',
     color: '#DB2777',
+    image: uiUxImage,
     excerpt: 'Good design is good business. Learn the best UI/UX practices that enhance user satisfaction and engagement.',
     body: `Good design earns its keep quietly — in lower support volume, higher conversion, and users who don't have to think about the interface at all. A few practices consistently pay for themselves.
 
@@ -100,6 +111,7 @@ None of this requires a bigger design team — it requires treating these detail
     date: '2026-03-22',
     readTime: '6 min read',
     color: '#EA580C',
+    image: startupStackImage,
     excerpt: 'The technology choices you make early shape your velocity for years. Here is how we help founders decide.',
     body: `Founders often ask us to recommend "the best" tech stack, but the better question is which stack fits their team, timeline, and the specific problem they're solving.
 
@@ -120,6 +132,7 @@ Plan one deliberate re-architecture, not zero. Almost every successful product o
     date: '2026-03-08',
     readTime: '5 min read',
     color: '#0B5CFF',
+    image: seoImage,
     excerpt: 'Search visibility still drives a huge share of organic growth. Here are the fundamentals that still matter.',
     body: `SEO advice ages quickly, but a core set of fundamentals has remained stable even as search engines have gotten smarter.
 

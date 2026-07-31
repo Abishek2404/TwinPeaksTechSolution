@@ -4,9 +4,9 @@ import SectionHeader from '../components/SectionHeader'
 import CtaBanner from '../components/CtaBanner'
 
 const stats = [
-  { icon: Rocket, value: '50+', label: 'Projects Completed' },
-  { icon: Smile, value: '30+', label: 'Happy Clients' },
-  { icon: Briefcase, value: '2+', label: 'Years of Experience' },
+  { icon: Rocket, value: '10+', label: 'Projects Completed' },
+  { icon: Smile, value: '10+', label: 'Happy Clients' },
+  { icon: Briefcase, value: '1+', label: 'Years of Experience' },
   { icon: Headset, value: '24/7', label: 'Support Available' },
 ]
 
@@ -18,9 +18,21 @@ const values = [
 ]
 
 const timeline = [
-  { year: '2024', title: 'Twin Peaks Founded', desc: 'Started as a two-person studio taking on freelance web projects in Vellore.' },
-  { year: '2025', title: 'First Enterprise Client', desc: 'Delivered our first large-scale web application for a healthcare client.' },
-  { year: '2026', title: 'AI Solutions Launched', desc: 'Expanded into AI-powered products, chatbots, and automation for clients.' },
+  {
+    year: '2026',
+    title: 'Twin Peaks Founded',
+    desc: 'Twin Peaks Tech Solution was established with a vision to build modern websites, AI-powered applications, and innovative digital solutions for businesses.',
+  },
+  {
+    year: '2026',
+    title: 'Portfolio & Product Launch',
+    desc: 'Designed and developed our first portfolio website while showcasing AI solutions, web applications, and responsive business websites.',
+  },
+  {
+    year: '2026',
+    title: 'Building the Future',
+    desc: 'Focused on creating scalable AI products, custom software solutions, and long-term partnerships with startups and growing businesses.',
+  },
 ]
 
 export default function About() {

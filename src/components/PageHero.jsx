@@ -1,13 +1,14 @@
 import Eyebrow from './Eyebrow'
+import subBackground from '../assets/images/sub-background.png'
 
 export default function PageHero({ eyebrow, heading, highlight, sub, compact = false }) {
   return (
     <section className={`relative bg-navy-950 overflow-hidden ${compact ? 'pt-32 pb-16' : 'pt-36 pb-20'}`}>
       <div className="absolute inset-0 pointer-events-none">
-        <svg className="absolute right-0 top-0 w-[55%] h-full opacity-70" viewBox="0 0 900 700" preserveAspectRatio="xMaxYMin slice" fill="none">
-          <path d="M900 700V400L750 180L650 320L560 150L470 380L380 220L280 700H900Z" fill="#0A1B3D" />
-          <path d="M900 700V450L780 260L700 380L620 200L560 700H900Z" fill="#10285A" opacity="0.6" />
-        </svg>
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: `url(${subBackground})` }}
+        />
         <div className="absolute inset-0 bg-dot-grid opacity-30" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-navy-950/60" />
       </div>

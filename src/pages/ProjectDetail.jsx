@@ -13,8 +13,8 @@ export default function ProjectDetail() {
 
   return (
     <>
-      <section className="relative pt-32 pb-20" style={{ backgroundColor: project.color }}>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
+      <section className="relative pt-32 pb-20 min-h-[320px] overflow-hidden" style={{ backgroundColor: project.color }}>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/20 to-transparent" />
         <div className="relative max-w-5xl mx-auto px-6">
           <span className="inline-block text-xs font-bold tracking-wide uppercase bg-white/15 backdrop-blur-sm text-white px-4 py-1.5 rounded-full mb-5">
             {project.category}
@@ -68,8 +68,18 @@ export default function ProjectDetail() {
           <div className="grid sm:grid-cols-3 gap-5">
             {more.map((p) => (
               <Link key={p.slug} to={`/portfolio/${p.slug}`} className="group bg-white rounded-2xl overflow-hidden border border-slate-200/70 hover:shadow-lg transition-shadow">
-                <div className="h-32 flex items-center justify-center" style={{ backgroundColor: p.color }}>
-                  <span className="text-white/90 font-display font-semibold text-sm text-center px-4">{p.name}</span>
+                <div className="h-32 relative overflow-hidden">
+                  {p.image ? (
+                    <>
+                      <img src={p.image} alt={p.name} className="w-full h-full object-cover object-center" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                      <span className="absolute bottom-3 left-3 text-white font-display font-semibold text-sm">{p.name}</span>
+                    </>
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center" style={{ backgroundColor: p.color }}>
+                      <span className="text-white/90 font-display font-semibold text-sm text-center px-4">{p.name}</span>
+                    </div>
+                  )}
                 </div>
                 <div className="p-4">
                   <span className="text-[#0B5CFF] text-xs font-semibold">{p.category}</span>
