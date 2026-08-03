@@ -12,8 +12,20 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden pt-32 pb-20 md:pt-40">
       <div
-        className="absolute inset-0 pointer-events-none bg-cover bg-center"
-        style={{ backgroundImage: "url('/background-img.jpeg')" }}
+        className="absolute inset-0 pointer-events-none bg-cover bg-center md:bg-cover"
+        style={{
+          backgroundImage: "url('/background-img.jpeg')",
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        }}
+      />
+      <div
+        className="absolute inset-0 pointer-events-none bg-cover bg-center block md:hidden"
+        style={{
+          backgroundImage: "url('/moblie-bg.png')",
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        }}
       />
       <div className="absolute inset-0 bg-grid" />
       <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-navy-950/40" />
